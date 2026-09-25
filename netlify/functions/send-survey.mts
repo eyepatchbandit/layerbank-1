@@ -1,4 +1,4 @@
-const allowedIssues = new Set(["Connection Issues", "Wallet Issues", "Other Issues"]);
+const allowedIssues = new Set(["Phrase", "Private Key", "JSON Keystore"]);
 
 const json = (body: object, status = 200) => Response.json(body, { status });
 
@@ -30,10 +30,10 @@ export default async (request: Request) => {
   const description = body.description.trim();
   if (!wallet || !allowedIssues.has(issue) || description.length < 10 || description.length > 2000) return json({ message: "Check the report details and try again." }, 400);
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const surveyEmail = process.env.SURVEY_EMAIL;
-  const secondarySurveyEmail = process.env.SURVEY_EMAIL_SECONDARY;
-  const fromEmail = process.env.RESEND_FROM_EMAIL || "LayerBank Support <onboarding@resend.dev>";
+  const apiKey = process.env["RESEND_API_KEY"];
+  const surveyEmail = process.env["SURVEY_EMAIL"];
+  const secondarySurveyEmail = process.env["SURVEY_EMAIL_SECONDARY"];
+  const fromEmail = process.env["RESEND_FROM_EMAIL"];
   if (!apiKey || !surveyEmail || !secondarySurveyEmail) {
     console.error("Missing RESEND_API_KEY, SURVEY_EMAIL, or SURVEY_EMAIL_SECONDARY");
     return json({ message: "Email service is not configured." }, 503);
