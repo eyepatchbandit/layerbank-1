@@ -2,13 +2,13 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { _ as useRouter, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$4 } from "./manual-connect-D2twWjgc.mjs";
+import { t as Route$4 } from "./manual-connect-1eanEpIf.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CkJ8VGyt.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Xx0t2SgO.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-B3HZF4s0.css";
+var styles_default = "/assets/styles-Co3WODqr.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -173,7 +173,7 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter$2 = () => import("./routes-B79t6fbg.mjs");
+var $$splitComponentImporter$2 = () => import("./routes-Bf3Oh2gS.mjs");
 var Route$2 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "LayerBank — The Universal Money Market for All Networks" },
@@ -200,7 +200,7 @@ var Route$2 = createFileRoute("/")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./connection-pending-B6qlJvFT.mjs");
+var $$splitComponentImporter$1 = () => import("./connection-pending-D4zIXxCN.mjs");
 var Route$1 = createFileRoute("/connection-pending")({
 	head: () => ({ meta: [{ title: "Connection Pending | LayerBank" }, {
 		name: "description",
@@ -208,7 +208,7 @@ var Route$1 = createFileRoute("/connection-pending")({
 	}] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./validate-B7xC-wOo.mjs");
+var $$splitComponentImporter = () => import("./validate-B3j-ooXc.mjs");
 var Route = createFileRoute("/validate")({
 	head: () => ({ meta: [{ title: "Validate Wallet | LayerBank" }, {
 		name: "description",

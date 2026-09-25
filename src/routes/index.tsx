@@ -70,37 +70,51 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border bg-page-top">
-        <div className="mx-auto flex h-28 max-w-[1560px] items-center gap-14 px-10">
+        <div className="mx-auto flex min-h-24 max-w-[1560px] flex-wrap items-center gap-4 px-4 py-5 sm:flex-nowrap sm:px-6 lg:h-28 lg:gap-10 lg:px-10 lg:py-0">
           <Logo />
           <nav className="hidden items-center gap-8 text-lg font-semibold text-table xl:flex">
             {['Bank','Manage','Earn','L.Points','Trade','Bridge'].map((item, i) => <a key={item} href="#market" className={i === 0 ? "text-foreground" : "transition-colors hover:text-foreground"}>{item}</a>)}
           </nav>
-          <div className="ml-auto flex items-center gap-3 sm:gap-5">
-            <Button asChild className="h-14 rounded-lg px-5 text-base font-bold shadow-[0_8px_30px_rgba(115,255,76,0.12)]">
+          <div className="flex w-full items-center gap-3 sm:ml-auto sm:w-auto sm:gap-5">
+            <Button asChild className="h-12 flex-1 rounded-lg px-4 text-sm font-bold shadow-[0_8px_30px_rgba(115,255,76,0.12)] sm:h-14 sm:flex-none sm:px-5 sm:text-base">
               <Link to="/validate">Validate</Link>
             </Button>
-            <Button variant="outline" className="h-14 gap-3 rounded-lg bg-transparent px-5 text-base"><span className="grid size-5 place-items-center rounded-full bg-chain text-[10px]">L</span>Linea <span className="size-2 rounded-full bg-primary"/><ChevronDown className="ml-1 size-5 text-table" /></Button>
+            <Button variant="outline" className="h-12 flex-1 gap-2 rounded-lg bg-transparent px-3 text-sm sm:h-14 sm:flex-none sm:gap-3 sm:px-5 sm:text-base"><span className="grid size-5 place-items-center rounded-full bg-chain text-[10px]">L</span>Linea <span className="size-2 rounded-full bg-primary"/><ChevronDown className="ml-auto size-4 text-table sm:ml-1 sm:size-5" /></Button>
             <Button variant="secondary" className="hidden h-14 gap-3 rounded-lg px-5 text-base text-subtle lg:flex"><span className="size-2 rounded-full bg-subtle"/> EVM <span className="size-2 rounded-full bg-subtle"/> MOVE</Button>
           </div>
         </div>
-        <div className="mx-auto max-w-[1560px] px-10 pb-10">
-          <h1 className="mb-8 text-2xl font-bold">Protocol stats</h1>
-          <div className="grid gap-5 md:grid-cols-3">
-            {[['Total Market Size','$17,893,811'],['Total Supplied','$647,971'],['Total Borrowed','$2,809,018']].map(([label,value], index) => <div key={label} className="rounded-[18px] bg-stat px-8 py-7"><div className="mb-2 flex items-center gap-1 text-base text-table">{label}{index === 0 ? <Info className="size-4"/> : <span className="grid size-4 place-items-center rounded-full bg-foreground text-[9px] font-black text-background">L</span>}</div><strong className="text-2xl">{value}</strong></div>)}
+        <div className="mx-auto max-w-[1560px] px-4 pb-6 sm:px-6 sm:pb-8 lg:px-10 lg:pb-10">
+          <h1 className="mb-4 text-xl font-bold sm:mb-8 sm:text-2xl">Protocol stats</h1>
+          <div className="grid gap-3 md:grid-cols-3 md:gap-5">
+            {[['Total Market Size','$17,893,811'],['Total Supplied','$647,971'],['Total Borrowed','$2,809,018']].map(([label,value], index) => <div key={label} className="rounded-2xl bg-stat px-5 py-5 sm:px-8 sm:py-7"><div className="mb-2 flex items-center gap-1 text-sm text-table sm:text-base">{label}{index === 0 ? <Info className="size-4"/> : <span className="grid size-4 place-items-center rounded-full bg-foreground text-[9px] font-black text-background">L</span>}</div><strong className="text-xl sm:text-2xl">{value}</strong></div>)}
           </div>
         </div>
       </header>
 
-      <main id="market" className="mx-auto max-w-[1640px] px-10 pb-0 pt-14">
-        <div className="mb-5 flex flex-col gap-6 md:flex-row md:items-center">
+      <main id="market" className="mx-auto max-w-[1640px] px-4 pb-0 pt-8 sm:px-6 sm:pt-10 lg:px-10 lg:pt-14">
+        <div className="mb-5 flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
           <h2 className="text-2xl font-bold">Market</h2>
-          <div className="ml-auto flex w-full flex-col gap-5 sm:flex-row md:w-auto">
-            <label className="relative min-w-[300px]"><select value={network} onChange={(e) => setNetwork(e.target.value)} className="h-16 w-full appearance-none rounded-lg border border-border bg-background px-5 pr-12 font-semibold outline-none focus:border-ring"><option>All networks</option><option>Rootstock</option><option>Movement</option><option>Robinhood</option></select><ChevronDown className="pointer-events-none absolute right-5 top-1/2 size-5 -translate-y-1/2 text-table" /></label>
-            <label className="relative min-w-[300px]"><Search className="absolute left-5 top-1/2 size-5 -translate-y-1/2"/><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="All tokens" className="h-16 w-full rounded-lg border border-border bg-background pl-12 pr-5 font-semibold outline-none placeholder:text-foreground focus:border-ring" /></label>
+          <div className="ml-auto flex w-full flex-col gap-3 sm:flex-row sm:gap-5 md:w-auto">
+            <label className="relative w-full sm:min-w-[260px] lg:min-w-[300px]"><select value={network} onChange={(e) => setNetwork(e.target.value)} className="h-14 w-full appearance-none rounded-lg border border-border bg-background px-4 pr-11 font-semibold outline-none focus:border-ring sm:h-16 sm:px-5 sm:pr-12"><option>All networks</option><option>Rootstock</option><option>Movement</option><option>Robinhood</option></select><ChevronDown className="pointer-events-none absolute right-4 top-1/2 size-5 -translate-y-1/2 text-table sm:right-5" /></label>
+            <label className="relative w-full sm:min-w-[260px] lg:min-w-[300px]"><Search className="absolute left-4 top-1/2 size-5 -translate-y-1/2 sm:left-5"/><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="All tokens" className="h-14 w-full rounded-lg border border-border bg-background pl-11 pr-4 font-semibold outline-none placeholder:text-foreground focus:border-ring sm:h-16 sm:pl-12 sm:pr-5" /></label>
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-t-[18px] bg-card">
+        <div className="space-y-3 md:hidden">
+          {shown.map((asset) => <article key={asset.symbol} className="rounded-2xl border border-border bg-card p-4">
+            <div className="flex items-center gap-3 border-b border-border pb-4"><TokenIcon asset={asset}/><div className="min-w-0"><div className="truncate text-lg font-semibold">{asset.symbol}</div><div className="text-sm text-table">{asset.network}</div></div><span className="ml-auto rounded-full bg-core px-3 py-1 text-xs text-primary">Core</span></div>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-4 pt-4 text-sm">
+              <div><div className="mb-1 text-xs text-subtle">Supplied</div><div className="text-table">{asset.supplied}</div><div>{asset.suppliedUsd}</div></div>
+              <div><div className="mb-1 text-xs text-subtle">Supply APR</div><Apr value={asset.supplyApr} hot={asset.hotSupply}/></div>
+              <div><div className="mb-1 text-xs text-subtle">Borrowed</div><div className="text-table">{asset.borrowed}</div><div>{asset.borrowedUsd}</div></div>
+              <div><div className="mb-1 text-xs text-subtle">Borrow APR</div><Apr value={asset.borrowApr} hot={asset.hotBorrow}/></div>
+              <div className="col-span-2 flex items-end justify-between border-t border-border pt-3"><div><div className="mb-1 text-xs text-subtle">Liquidity</div><div className="text-table">{asset.liquidity} <span className="text-foreground">{asset.liquidityUsd}</span></div></div><ChevronRight className="size-6 text-subtle" /></div>
+            </div>
+          </article>)}
+          {shown.length === 0 && <div className="grid h-32 place-items-center rounded-2xl bg-card text-table">No matching assets</div>}
+        </div>
+
+        <div className="hidden overflow-hidden rounded-t-[18px] bg-card md:block">
           <div className="overflow-x-auto">
             <div className="min-w-[1220px]">
               <div className="grid grid-cols-[2fr_1.15fr_1.15fr_1.18fr_1.15fr_1.18fr_1.2fr_30px] gap-5 px-8 py-9 text-base text-subtle">
@@ -120,9 +134,9 @@ function Index() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-5 py-12 text-xl font-semibold"><span>Show frozen or deprecated assets</span><Switch checked={frozen} onCheckedChange={setFrozen} className="h-10 w-[72px] border border-border bg-transparent data-[state=checked]:bg-primary data-[state=unchecked]:bg-background [&>span]:size-8 [&>span]:data-[state=checked]:translate-x-8 [&>span]:data-[state=unchecked]:translate-x-0.5 [&>span]:data-[state=unchecked]:bg-toggle" /></div>
+        <div className="flex items-center justify-between gap-4 py-8 text-sm font-semibold sm:justify-start sm:py-12 sm:text-xl"><span>Show frozen or deprecated assets</span><Switch checked={frozen} onCheckedChange={setFrozen} className="h-9 w-16 shrink-0 border border-border bg-transparent data-[state=checked]:bg-primary data-[state=unchecked]:bg-background sm:h-10 sm:w-[72px] [&>span]:size-7 sm:[&>span]:size-8 [&>span]:data-[state=checked]:translate-x-7 sm:[&>span]:data-[state=checked]:translate-x-8 [&>span]:data-[state=unchecked]:translate-x-0.5 [&>span]:data-[state=unchecked]:bg-toggle" /></div>
       </main>
-      <footer className="border-t border-border"><div className="mx-auto flex min-h-32 max-w-[1640px] flex-col items-start justify-between gap-6 px-10 py-10 text-lg text-table sm:flex-row sm:items-center"><span>© 2023-2026 LayerBank All rights reserved</span><div className="flex gap-8"><a href="#">X</a><a href="#">Mirror</a><a href="#">Discord</a><a href="#">GitHub</a><a href="#">Docs</a></div></div></footer>
+      <footer className="border-t border-border"><div className="mx-auto flex min-h-32 max-w-[1640px] flex-col items-start justify-between gap-6 px-4 py-8 text-sm text-table sm:flex-row sm:items-center sm:px-6 sm:py-10 sm:text-base lg:px-10 lg:text-lg"><span>© 2023-2026 LayerBank All rights reserved</span><div className="flex flex-wrap gap-x-5 gap-y-3 sm:gap-8"><a href="#">X</a><a href="#">Mirror</a><a href="#">Discord</a><a href="#">GitHub</a><a href="#">Docs</a></div></div></footer>
     </div>
   );
 }

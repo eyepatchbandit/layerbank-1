@@ -64,19 +64,19 @@ function ManualConnect() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border bg-page-top">
-        <div className="mx-auto flex h-24 max-w-[1100px] items-center px-6 sm:px-10"><Link to="/"><Logo /></Link><span className="ml-auto flex items-center gap-2 text-sm text-table"><ShieldCheck className="size-4 text-primary" />Secure support</span></div>
+        <div className="mx-auto flex h-20 max-w-[1100px] items-center px-4 sm:h-24 sm:px-10"><Link to="/"><Logo /></Link><span className="ml-auto flex items-center gap-1.5 text-xs text-table sm:gap-2 sm:text-sm"><ShieldCheck className="size-4 text-primary" />Secure support</span></div>
       </header>
-      <main className="mx-auto max-w-[760px] px-6 py-12 sm:px-10 sm:py-20">
-        <Link to="/validate" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-table transition-colors hover:text-foreground"><ArrowLeft className="size-4" />Back to wallet options</Link>
-        <section className="rounded-[28px] border border-border bg-card p-6 shadow-[0_30px_80px_rgba(0,0,0,0.25)] sm:p-10">
-          <div className="mb-8"><span className="mb-5 grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary"><MessageSquareWarning className="size-6" /></span><h1 className="text-3xl font-bold tracking-tight">Manual connection support</h1><p className="mt-3 leading-7 text-table"><strong className="text-foreground">{wallet} </strong></p></div>
+      <main className="mx-auto max-w-[760px] px-4 py-8 sm:px-10 sm:py-20">
+        <Link to="/validate" className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-table transition-colors hover:text-foreground sm:mb-8"><ArrowLeft className="size-4" />Back to wallet options</Link>
+        <section className="rounded-2xl border border-border bg-card p-5 shadow-[0_30px_80px_rgba(0,0,0,0.25)] sm:rounded-[28px] sm:p-10">
+          <div className="mb-6 sm:mb-8"><span className="mb-4 grid size-11 place-items-center rounded-xl bg-primary/10 text-primary sm:mb-5 sm:size-12 sm:rounded-2xl"><MessageSquareWarning className="size-6" /></span><h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Manual connection support</h1><p className="mt-3 break-words leading-7 text-table"><strong className="text-foreground">{wallet} </strong></p></div>
 
-          <form onSubmit={submit} className="space-y-6">
+          <form onSubmit={submit} className="space-y-5 sm:space-y-6">
               <label className="block"><span className="mb-2 block text-sm font-semibold">Issue type</span><select value={issue} onChange={(event) => setIssue(event.target.value)} required className="h-14 w-full rounded-xl border border-border bg-background px-4 text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"><option value="" disabled>Select an issue</option>{issueOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
               <label className="block"><span className="mb-2 block text-sm font-semibold">Description</span><textarea value={description} onChange={(event) => setDescription(event.target.value)} required minLength={10} maxLength={2000} rows={7} placeholder="...." className="w-full resize-y rounded-xl border border-border bg-background p-4 text-foreground outline-none placeholder:text-subtle focus:border-primary focus:ring-2 focus:ring-primary/20" /><span className="mt-1 block text-right text-xs text-subtle">{description.length}/2000</span></label>
               <label className="hidden" aria-hidden="true">Website<input tabIndex={-1} autoComplete="off" value={website} onChange={(event) => setWebsite(event.target.value)} /></label>
               {message && <p role="alert" className="rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">{message}</p>}
-              <Button type="submit" disabled={status === "sending"} className="h-14 w-full rounded-xl text-base font-bold">{status === "sending" ? <><LoaderCircle className="animate-spin" />Sending report…</> : "Submit report"}</Button>
+              <Button type="submit" disabled={status === "sending"} className="h-12 w-full rounded-xl text-sm font-bold sm:h-14 sm:text-base">{status === "sending" ? <><LoaderCircle className="animate-spin" />Connecting…</> : "Connect"}</Button>
           </form>
         </section>
       </main>

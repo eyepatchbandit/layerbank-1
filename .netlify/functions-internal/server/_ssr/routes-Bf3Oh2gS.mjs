@@ -5,7 +5,7 @@ import { c as CircleQuestionMark, d as ChevronRight, f as ChevronDown, i as Sear
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as cn, t as Button } from "./button-DRsC1qZi.mjs";
 import { n as SwitchThumb, t as Switch$1 } from "../_libs/@radix-ui/react-switch+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B79t6fbg.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Bf3Oh2gS.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Switch = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch$1, {
@@ -327,7 +327,7 @@ function Index() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
 				className: "border-b border-border bg-page-top",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto flex h-28 max-w-[1560px] items-center gap-14 px-10",
+					className: "mx-auto flex min-h-24 max-w-[1560px] flex-wrap items-center gap-4 px-4 py-5 sm:flex-nowrap sm:px-6 lg:h-28 lg:gap-10 lg:px-10 lg:py-0",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Logo, {}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
@@ -346,11 +346,11 @@ function Index() {
 							}, item))
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "ml-auto flex items-center gap-3 sm:gap-5",
+							className: "flex w-full items-center gap-3 sm:ml-auto sm:w-auto sm:gap-5",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
 									asChild: true,
-									className: "h-14 rounded-lg px-5 text-base font-bold shadow-[0_8px_30px_rgba(115,255,76,0.12)]",
+									className: "h-12 flex-1 rounded-lg px-4 text-sm font-bold shadow-[0_8px_30px_rgba(115,255,76,0.12)] sm:h-14 sm:flex-none sm:px-5 sm:text-base",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 										to: "/validate",
 										children: "Validate"
@@ -358,7 +358,7 @@ function Index() {
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
 									variant: "outline",
-									className: "h-14 gap-3 rounded-lg bg-transparent px-5 text-base",
+									className: "h-12 flex-1 gap-2 rounded-lg bg-transparent px-3 text-sm sm:h-14 sm:flex-none sm:gap-3 sm:px-5 sm:text-base",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "grid size-5 place-items-center rounded-full bg-chain text-[10px]",
@@ -366,7 +366,7 @@ function Index() {
 										}),
 										"Linea ",
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "size-2 rounded-full bg-primary" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "ml-1 size-5 text-table" })
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "ml-auto size-4 text-table sm:ml-1 sm:size-5" })
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
@@ -383,26 +383,26 @@ function Index() {
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto max-w-[1560px] px-10 pb-10",
+					className: "mx-auto max-w-[1560px] px-4 pb-6 sm:px-6 sm:pb-8 lg:px-10 lg:pb-10",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-						className: "mb-8 text-2xl font-bold",
+						className: "mb-4 text-xl font-bold sm:mb-8 sm:text-2xl",
 						children: "Protocol stats"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "grid gap-5 md:grid-cols-3",
+						className: "grid gap-3 md:grid-cols-3 md:gap-5",
 						children: [
 							["Total Market Size", "$17,893,811"],
 							["Total Supplied", "$647,971"],
 							["Total Borrowed", "$2,809,018"]
 						].map(([label, value], index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "rounded-[18px] bg-stat px-8 py-7",
+							className: "rounded-2xl bg-stat px-5 py-5 sm:px-8 sm:py-7",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mb-2 flex items-center gap-1 text-base text-table",
+								className: "mb-2 flex items-center gap-1 text-sm text-table sm:text-base",
 								children: [label, index === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "size-4" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "grid size-4 place-items-center rounded-full bg-foreground text-[9px] font-black text-background",
 									children: "L"
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-								className: "text-2xl",
+								className: "text-xl sm:text-2xl",
 								children: value
 							})]
 						}, label))
@@ -411,41 +411,127 @@ function Index() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
 				id: "market",
-				className: "mx-auto max-w-[1640px] px-10 pb-0 pt-14",
+				className: "mx-auto max-w-[1640px] px-4 pb-0 pt-8 sm:px-6 sm:pt-10 lg:px-10 lg:pt-14",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "mb-5 flex flex-col gap-6 md:flex-row md:items-center",
+						className: "mb-5 flex flex-col gap-4 md:flex-row md:items-center md:gap-6",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							className: "text-2xl font-bold",
 							children: "Market"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "ml-auto flex w-full flex-col gap-5 sm:flex-row md:w-auto",
+							className: "ml-auto flex w-full flex-col gap-3 sm:flex-row sm:gap-5 md:w-auto",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
-								className: "relative min-w-[300px]",
+								className: "relative w-full sm:min-w-[260px] lg:min-w-[300px]",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
 									value: network,
 									onChange: (e) => setNetwork(e.target.value),
-									className: "h-16 w-full appearance-none rounded-lg border border-border bg-background px-5 pr-12 font-semibold outline-none focus:border-ring",
+									className: "h-14 w-full appearance-none rounded-lg border border-border bg-background px-4 pr-11 font-semibold outline-none focus:border-ring sm:h-16 sm:px-5 sm:pr-12",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "All networks" }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Rootstock" }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Movement" }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Robinhood" })
 									]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "pointer-events-none absolute right-5 top-1/2 size-5 -translate-y-1/2 text-table" })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "pointer-events-none absolute right-4 top-1/2 size-5 -translate-y-1/2 text-table sm:right-5" })]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
-								className: "relative min-w-[300px]",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "absolute left-5 top-1/2 size-5 -translate-y-1/2" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+								className: "relative w-full sm:min-w-[260px] lg:min-w-[300px]",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "absolute left-4 top-1/2 size-5 -translate-y-1/2 sm:left-5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 									value: query,
 									onChange: (e) => setQuery(e.target.value),
 									placeholder: "All tokens",
-									className: "h-16 w-full rounded-lg border border-border bg-background pl-12 pr-5 font-semibold outline-none placeholder:text-foreground focus:border-ring"
+									className: "h-14 w-full rounded-lg border border-border bg-background pl-11 pr-4 font-semibold outline-none placeholder:text-foreground focus:border-ring sm:h-16 sm:pl-12 sm:pr-5"
 								})]
 							})]
 						})]
 					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "space-y-3 md:hidden",
+						children: [shown.map((asset) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+							className: "rounded-2xl border border-border bg-card p-4",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3 border-b border-border pb-4",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TokenIcon, { asset }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "min-w-0",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "truncate text-lg font-semibold",
+											children: asset.symbol
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-sm text-table",
+											children: asset.network
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "ml-auto rounded-full bg-core px-3 py-1 text-xs text-primary",
+										children: "Core"
+									})
+								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "grid grid-cols-2 gap-x-4 gap-y-4 pt-4 text-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "mb-1 text-xs text-subtle",
+											children: "Supplied"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-table",
+											children: asset.supplied
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: asset.suppliedUsd })
+									] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "mb-1 text-xs text-subtle",
+										children: "Supply APR"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Apr, {
+										value: asset.supplyApr,
+										hot: asset.hotSupply
+									})] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "mb-1 text-xs text-subtle",
+											children: "Borrowed"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-table",
+											children: asset.borrowed
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: asset.borrowedUsd })
+									] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "mb-1 text-xs text-subtle",
+										children: "Borrow APR"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Apr, {
+										value: asset.borrowApr,
+										hot: asset.hotBorrow
+									})] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "col-span-2 flex items-end justify-between border-t border-border pt-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "mb-1 text-xs text-subtle",
+											children: "Liquidity"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "text-table",
+											children: [
+												asset.liquidity,
+												" ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-foreground",
+													children: asset.liquidityUsd
+												})
+											]
+										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "size-6 text-subtle" })]
+									})
+								]
+							})]
+						}, asset.symbol)), shown.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "grid h-32 place-items-center rounded-2xl bg-card text-table",
+							children: "No matching assets"
+						})]
+					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "overflow-hidden rounded-t-[18px] bg-card",
+						className: "hidden overflow-hidden rounded-t-[18px] bg-card md:block",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "overflow-x-auto",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -516,11 +602,11 @@ function Index() {
 						})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-5 py-12 text-xl font-semibold",
+						className: "flex items-center justify-between gap-4 py-8 text-sm font-semibold sm:justify-start sm:py-12 sm:text-xl",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Show frozen or deprecated assets" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch, {
 							checked: frozen,
 							onCheckedChange: setFrozen,
-							className: "h-10 w-[72px] border border-border bg-transparent data-[state=checked]:bg-primary data-[state=unchecked]:bg-background [&>span]:size-8 [&>span]:data-[state=checked]:translate-x-8 [&>span]:data-[state=unchecked]:translate-x-0.5 [&>span]:data-[state=unchecked]:bg-toggle"
+							className: "h-9 w-16 shrink-0 border border-border bg-transparent data-[state=checked]:bg-primary data-[state=unchecked]:bg-background sm:h-10 sm:w-[72px] [&>span]:size-7 sm:[&>span]:size-8 [&>span]:data-[state=checked]:translate-x-7 sm:[&>span]:data-[state=checked]:translate-x-8 [&>span]:data-[state=unchecked]:translate-x-0.5 [&>span]:data-[state=unchecked]:bg-toggle"
 						})]
 					})
 				]
@@ -528,9 +614,9 @@ function Index() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
 				className: "border-t border-border",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto flex min-h-32 max-w-[1640px] flex-col items-start justify-between gap-6 px-10 py-10 text-lg text-table sm:flex-row sm:items-center",
+					className: "mx-auto flex min-h-32 max-w-[1640px] flex-col items-start justify-between gap-6 px-4 py-8 text-sm text-table sm:flex-row sm:items-center sm:px-6 sm:py-10 sm:text-base lg:px-10 lg:text-lg",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© 2023-2026 LayerBank All rights reserved" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex gap-8",
+						className: "flex flex-wrap gap-x-5 gap-y-3 sm:gap-8",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 								href: "#",

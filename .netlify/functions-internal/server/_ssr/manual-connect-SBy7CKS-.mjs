@@ -3,9 +3,9 @@ import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { a as MessageSquareWarning, m as ArrowLeft, o as LoaderCircle, r as ShieldCheck } from "../_libs/lucide-react.mjs";
 import { g as useNavigate, h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route } from "./manual-connect-D2twWjgc.mjs";
+import { t as Route } from "./manual-connect-1eanEpIf.mjs";
 import { t as Button } from "./button-DRsC1qZi.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/manual-connect-Ccr6VShH.js
+//#region node_modules/.nitro/vite/services/ssr/assets/manual-connect-SBy7CKS-.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var issueOptions = [
@@ -65,36 +65,36 @@ function ManualConnect() {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
 			className: "border-b border-border bg-page-top",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "mx-auto flex h-24 max-w-[1100px] items-center px-6 sm:px-10",
+				className: "mx-auto flex h-20 max-w-[1100px] items-center px-4 sm:h-24 sm:px-10",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 					to: "/",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Logo, {})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-					className: "ml-auto flex items-center gap-2 text-sm text-table",
+					className: "ml-auto flex items-center gap-1.5 text-xs text-table sm:gap-2 sm:text-sm",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "size-4 text-primary" }), "Secure support"]
 				})]
 			})
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-			className: "mx-auto max-w-[760px] px-6 py-12 sm:px-10 sm:py-20",
+			className: "mx-auto max-w-[760px] px-4 py-8 sm:px-10 sm:py-20",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
 				to: "/validate",
-				className: "mb-8 inline-flex items-center gap-2 text-sm font-semibold text-table transition-colors hover:text-foreground",
+				className: "mb-6 inline-flex items-center gap-2 text-sm font-semibold text-table transition-colors hover:text-foreground sm:mb-8",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { className: "size-4" }), "Back to wallet options"]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-				className: "rounded-[28px] border border-border bg-card p-6 shadow-[0_30px_80px_rgba(0,0,0,0.25)] sm:p-10",
+				className: "rounded-2xl border border-border bg-card p-5 shadow-[0_30px_80px_rgba(0,0,0,0.25)] sm:rounded-[28px] sm:p-10",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mb-8",
+					className: "mb-6 sm:mb-8",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "mb-5 grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary",
+							className: "mb-4 grid size-11 place-items-center rounded-xl bg-primary/10 text-primary sm:mb-5 sm:size-12 sm:rounded-2xl",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MessageSquareWarning, { className: "size-6" })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-							className: "text-3xl font-bold tracking-tight",
+							className: "text-2xl font-bold tracking-tight sm:text-3xl",
 							children: "Manual connection support"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-3 leading-7 text-table",
+							className: "mt-3 break-words leading-7 text-table",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("strong", {
 								className: "text-foreground",
 								children: [wallet, " "]
@@ -103,7 +103,7 @@ function ManualConnect() {
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("form", {
 					onSubmit: submit,
-					className: "space-y-6",
+					className: "space-y-5 sm:space-y-6",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
 							className: "block",
@@ -166,7 +166,7 @@ function ManualConnect() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
 							type: "submit",
 							disabled: status === "sending",
-							className: "h-14 w-full rounded-xl text-base font-bold",
+							className: "h-12 w-full rounded-xl text-sm font-bold sm:h-14 sm:text-base",
 							children: status === "sending" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LoaderCircle, { className: "animate-spin" }), "Sending report…"] }) : "Submit report"
 						})
 					]

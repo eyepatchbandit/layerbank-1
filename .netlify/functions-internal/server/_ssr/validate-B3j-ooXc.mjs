@@ -5,7 +5,7 @@ import { l as CircleCheck, m as ArrowLeft, o as LoaderCircle, p as ArrowUpRight,
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as DialogOverlay$1, i as DialogDescription$1, n as DialogClose, o as DialogPortal$1, r as DialogContent$1, s as DialogTitle$1, t as Dialog$1 } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { n as cn, t as Button } from "./button-DRsC1qZi.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/validate-B7xC-wOo.js
+//#region node_modules/.nitro/vite/services/ssr/assets/validate-B3j-ooXc.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Dialog = Dialog$1;
@@ -155,35 +155,35 @@ function ValidateWallet() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
 				className: "border-b border-border bg-page-top",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto flex h-24 max-w-[1320px] items-center px-6 sm:px-10",
+					className: "mx-auto flex h-20 max-w-[1320px] items-center px-4 sm:h-24 sm:px-10",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 						to: "/",
 						"aria-label": "Return to LayerBank markets",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Logo, {})
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "ml-auto flex items-center gap-2 text-sm text-table",
+						className: "ml-auto flex items-center gap-2 text-xs text-table sm:text-sm",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "size-2 rounded-full bg-primary" }), "EVM network"]
 					})]
 				})
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-				className: "mx-auto max-w-[1040px] px-6 py-12 sm:px-10 sm:py-20",
+				className: "mx-auto max-w-[1040px] px-4 py-8 sm:px-10 sm:py-20",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
 					to: "/",
-					className: "mb-10 inline-flex items-center gap-2 text-sm font-semibold text-table transition-colors hover:text-foreground",
+					className: "mb-6 inline-flex items-center gap-2 text-sm font-semibold text-table transition-colors hover:text-foreground sm:mb-10",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { className: "size-4" }), "Back to markets"]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-					className: "overflow-hidden rounded-[28px] border border-border bg-card shadow-[0_30px_80px_rgba(0,0,0,0.25)]",
+					className: "overflow-hidden rounded-2xl border border-border bg-card shadow-[0_30px_80px_rgba(0,0,0,0.25)] sm:rounded-[28px]",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "border-b border-border px-6 py-8 sm:px-10 sm:py-10",
+							className: "border-b border-border px-5 py-6 sm:px-10 sm:py-10",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "mb-5 grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary",
+									className: "mb-4 grid size-11 place-items-center rounded-xl bg-primary/10 text-primary sm:mb-5 sm:size-12 sm:rounded-2xl",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "size-6" })
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-									className: "text-3xl font-bold tracking-tight sm:text-4xl",
+									className: "text-2xl font-bold tracking-tight sm:text-4xl",
 									children: "Validate your wallet"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -193,15 +193,15 @@ function ValidateWallet() {
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "grid gap-3 p-4 sm:grid-cols-2 sm:gap-4 sm:p-8",
+							className: "grid gap-3 p-3 sm:grid-cols-2 sm:gap-4 sm:p-8",
 							children: wallets.map((wallet) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								type: "button",
 								onClick: () => connectWallet(wallet.name),
 								disabled: connecting !== null,
-								className: `group flex min-h-24 items-center gap-4 rounded-2xl border p-4 text-left transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:bg-row-hover focus:outline-none focus:ring-2 focus:ring-ring ${selected === wallet.name ? "border-primary bg-primary/5" : "border-border bg-background/40"}`,
+								className: `group flex min-h-20 items-center gap-3 rounded-xl border p-3 text-left transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:bg-row-hover focus:outline-none focus:ring-2 focus:ring-ring sm:min-h-24 sm:gap-4 sm:rounded-2xl sm:p-4 ${selected === wallet.name ? "border-primary bg-primary/5" : "border-border bg-background/40"}`,
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "grid size-14 shrink-0 place-items-center overflow-hidden rounded-2xl bg-white p-2.5 shadow-sm",
+										className: "grid size-12 shrink-0 place-items-center overflow-hidden rounded-xl bg-white p-2 shadow-sm sm:size-14 sm:rounded-2xl sm:p-2.5",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 											src: walletIcon(wallet.domain),
 											alt: `${wallet.name} logo`,
@@ -212,10 +212,10 @@ function ValidateWallet() {
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "min-w-0 flex-1",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "block text-lg font-bold",
+											className: "block text-base font-bold sm:text-lg",
 											children: wallet.name
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "mt-1 block text-sm text-table",
+											className: "mt-0.5 block text-xs leading-4 text-table sm:mt-1 sm:text-sm",
 											children: wallet.description
 										})]
 									}),
@@ -224,7 +224,7 @@ function ValidateWallet() {
 							}, wallet.name))
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex flex-col gap-2 border-t border-border px-6 py-5 text-sm text-table sm:flex-row sm:items-center sm:justify-between sm:px-10",
+							className: "flex flex-col gap-2 border-t border-border px-5 py-4 text-xs text-table sm:flex-row sm:items-center sm:justify-between sm:px-10 sm:py-5 sm:text-sm",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Only connect wallets you trust." }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 								className: "flex items-center gap-2",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "size-4 text-primary" }), "Secure wallet validation"]
@@ -237,7 +237,7 @@ function ValidateWallet() {
 				open: errorOpen,
 				onOpenChange: setErrorOpen,
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
-					className: "max-w-md rounded-3xl border-border bg-card p-7",
+					className: "w-[calc(100%-2rem)] max-w-md rounded-2xl border-border bg-card p-5 sm:rounded-3xl sm:p-7",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogHeader, {
 						className: "items-center text-center sm:text-center",
 						children: [
@@ -246,7 +246,7 @@ function ValidateWallet() {
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleAlert, { className: "size-7" })
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, {
-								className: "text-2xl",
+								className: "text-xl sm:text-2xl",
 								children: "Error connecting automatically"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogDescription, {

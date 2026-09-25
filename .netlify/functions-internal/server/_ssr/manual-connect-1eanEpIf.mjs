@@ -1,6 +1,6 @@
 import { f as lazyRouteComponent, p as createFileRoute } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/manual-connect-D2twWjgc.js
-var $$splitComponentImporter = () => import("./manual-connect-Ccr6VShH.mjs");
+//#region node_modules/.nitro/vite/services/ssr/assets/manual-connect-1eanEpIf.js
+var $$splitComponentImporter = () => import("./manual-connect-SBy7CKS-.mjs");
 var Route = createFileRoute("/manual-connect")({
 	validateSearch: (search) => ({ wallet: typeof search["wallet"] === "string" ? search["wallet"].slice(0, 80) : "Unknown wallet" }),
 	head: () => ({ meta: [{ title: "Wallet Connection Support | LayerBank" }, {
