@@ -2,6 +2,9 @@
   "name": "tanstack_start_ts",
   "private": true,
   "packageManager": "bun@1.4.2",
+  "engines": {
+    "node": ">=20.19.0 <21"
+  },
   "sideEffects": false,
   "type": "module",
   "scripts": {
