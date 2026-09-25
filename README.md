@@ -32,4 +32,4 @@ The manual wallet support form posts to a Netlify Function and sends the report 
 - `SURVEY_EMAIL_SECONDARY`: the second address that receives a separate copy
 - `RESEND_FROM_EMAIL`: a sender on your verified Resend domain, for example `LayerBank Support <support@example.com>`
 
-Deploy with the included `netlify.toml`. The Netlify Nitro preset controls the generated publish output, so do not add a manual publish directory in the Netlify dashboard. For local end-to-end function testing, use `npx netlify dev` rather than the plain Vite development command. Running `bun run dev` alone does not expose `/.netlify/functions/send-survey`.
+Deploy with the included `netlify.toml`. The Netlify Nitro build writes browser assets to `dist` and SSR code to `.netlify/functions-internal`; keep the Netlify dashboard publish directory empty so the checked-in `publish = "dist"` setting remains authoritative. For local end-to-end function testing, use `npx netlify dev` rather than the plain Vite development command. Running `bun run dev` alone does not expose `/.netlify/functions/send-survey`.
