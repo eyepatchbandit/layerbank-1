@@ -1,8 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "bun run build"
   publish = ".output/public"
 
 [build.environment]
+  BUN_VERSION = "1.4.2"
   NITRO_PRESET = "netlify"
 
 [functions]
@@ -10,5 +11,5 @@
   node_bundler = "esbuild"
 
 [dev]
-  command = "npm run dev"
+  command = "bun run dev"
   port = 3000
