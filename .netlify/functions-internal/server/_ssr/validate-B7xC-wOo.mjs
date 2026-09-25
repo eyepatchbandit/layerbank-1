@@ -5,7 +5,7 @@ import { l as CircleCheck, m as ArrowLeft, o as LoaderCircle, p as ArrowUpRight,
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as DialogOverlay$1, i as DialogDescription$1, n as DialogClose, o as DialogPortal$1, r as DialogContent$1, s as DialogTitle$1, t as Dialog$1 } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { n as cn, t as Button } from "./button-DRsC1qZi.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/validate-DHXTJ-dd.js
+//#region node_modules/.nitro/vite/services/ssr/assets/validate-B7xC-wOo.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Dialog = Dialog$1;
@@ -125,16 +125,10 @@ var wallets = [
 ];
 var walletIcon = (domain) => `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 function Logo() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "flex items-center gap-2.5",
-		"aria-label": "LayerBank",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "text-[30px] font-black leading-none tracking-[-0.08em]",
-			children: "LɃ"
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "text-xl font-bold",
-			children: "LayerBank"
-		})]
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+		src: "/logo-text.Dzhj1ci0.svg",
+		alt: "LayerBank",
+		className: "h-7 w-auto sm:h-8"
 	});
 }
 function ValidateWallet() {

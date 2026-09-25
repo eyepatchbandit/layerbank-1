@@ -77,14 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LayerBank" },
-      { name: "description", content: "LayerBank decentralized lending markets." },
+      { title: "LayerBank — The Universal Money Market for All Networks" },
+      { name: "description", content: "The Universal Money Market for All Networks." },
       { name: "author", content: "LayerBank" },
-      { property: "og:title", content: "LayerBank" },
-      { property: "og:description", content: "LayerBank decentralized lending markets." },
+      { property: "og:title", content: "LayerBank — The Universal Money Market for All Networks" },
+      { property: "og:description", content: "The Universal Money Market for All Networks." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -94,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/logo-text.Dzhj1ci0.svg", type: "image/svg+xml" },
     ],
   }),
   shellComponent: RootShell,

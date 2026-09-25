@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-Bjmzmc_y.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-CFjgZbrQ.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/HP/Documents/dark-mode-rebuild-main/dark-mode-rebuild-main/src/routes/__root.tsx",
@@ -8,21 +8,21 @@ var tsrStartManifest = () => ({ routes: {
 			"/manual-connect",
 			"/validate"
 		],
-		preloads: ["/assets/index-C-lbx0ZA.js", "/assets/jsx-runtime-Cltr0gcK.js"],
+		preloads: ["/assets/index-jPuqf675.js", "/assets/jsx-runtime-Cltr0gcK.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-C-lbx0ZA.js"
+			src: "/assets/index-jPuqf675.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/HP/Documents/dark-mode-rebuild-main/dark-mode-rebuild-main/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-CsGrO9jU.js",
+			"/assets/routes-sYcrl8DD.js",
 			"/assets/createLucideIcon-CEGepnBf.js",
 			"/assets/button-Di3IpB8a.js",
-			"/assets/dist-BztvZ7jn.js"
+			"/assets/dist-BgtWmOBm.js"
 		]
 	},
 	"/connection-pending": {
@@ -34,7 +34,7 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/HP/Documents/dark-mode-rebuild-main/dark-mode-rebuild-main/src/routes/manual-connect.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/manual-connect-BPxBiMb0.js",
+			"/assets/manual-connect-WauJ6uz7.js",
 			"/assets/createLucideIcon-CEGepnBf.js",
 			"/assets/shield-check-B48od7n2.js",
 			"/assets/loader-circle-LmZjNfAe.js",
@@ -45,12 +45,12 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/HP/Documents/dark-mode-rebuild-main/dark-mode-rebuild-main/src/routes/validate.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/validate-BozoWl31.js",
+			"/assets/validate-qUNrmPZh.js",
 			"/assets/createLucideIcon-CEGepnBf.js",
 			"/assets/shield-check-B48od7n2.js",
 			"/assets/loader-circle-LmZjNfAe.js",
 			"/assets/button-Di3IpB8a.js",
-			"/assets/dist-BztvZ7jn.js"
+			"/assets/dist-BgtWmOBm.js"
 		]
 	}
 } });

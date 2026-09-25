@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Markets | LayerBank" },
+      { title: "LayerBank — The Universal Money Market for All Networks" },
       { name: "description", content: "Explore supply and borrow markets across LayerBank." },
       { property: "og:title", content: "Markets | LayerBank" },
       { property: "og:description", content: "Explore supply and borrow markets across LayerBank." },
@@ -47,7 +47,7 @@ const assets: Asset[] = [
 ];
 
 function Logo() {
-  return <div className="flex items-center gap-2.5" aria-label="LayerBank"><span className="text-[30px] font-black leading-none tracking-[-0.08em]">LƂ</span><span className="text-xl font-bold">LayerBank</span></div>;
+  return <img src="/logo-text.Dzhj1ci0.svg" alt="LayerBank" className="h-7 w-auto sm:h-8" />;
 }
 
 function TokenIcon({ asset }: { asset: Asset }) {

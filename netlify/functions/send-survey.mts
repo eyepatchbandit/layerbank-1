@@ -62,5 +62,3 @@ export default async (request: Request) => {
   }
   return json({ message: "Report sent." });
 };
-
-export const config = { path: "/api/send-survey" };

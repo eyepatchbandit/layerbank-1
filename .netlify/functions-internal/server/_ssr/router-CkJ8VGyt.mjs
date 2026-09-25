@@ -2,13 +2,13 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { _ as useRouter, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$4 } from "./manual-connect-BJuidl4G.mjs";
+import { t as Route$4 } from "./manual-connect-D2twWjgc.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-B_1G0zwU.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CkJ8VGyt.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-BFbFTI0k.css";
+var styles_default = "/assets/styles-B3HZF4s0.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -104,10 +104,10 @@ var Route$3 = createRootRouteWithContext()({
 				name: "viewport",
 				content: "width=device-width, initial-scale=1"
 			},
-			{ title: "LayerBank" },
+			{ title: "LayerBank — The Universal Money Market for All Networks" },
 			{
 				name: "description",
-				content: "LayerBank decentralized lending markets."
+				content: "The Universal Money Market for All Networks."
 			},
 			{
 				name: "author",
@@ -115,11 +115,11 @@ var Route$3 = createRootRouteWithContext()({
 			},
 			{
 				property: "og:title",
-				content: "LayerBank"
+				content: "LayerBank — The Universal Money Market for All Networks"
 			},
 			{
 				property: "og:description",
-				content: "LayerBank decentralized lending markets."
+				content: "The Universal Money Market for All Networks."
 			},
 			{
 				property: "og:type",
@@ -128,10 +128,6 @@ var Route$3 = createRootRouteWithContext()({
 			{
 				name: "twitter:card",
 				content: "summary_large_image"
-			},
-			{
-				name: "twitter:site",
-				content: "@Lovable"
 			}
 		],
 		links: [
@@ -154,8 +150,8 @@ var Route$3 = createRootRouteWithContext()({
 			},
 			{
 				rel: "icon",
-				href: "/favicon.ico",
-				type: "image/x-icon"
+				href: "/logo-text.Dzhj1ci0.svg",
+				type: "image/svg+xml"
 			}
 		]
 	}),
@@ -177,10 +173,10 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter$2 = () => import("./routes-Bjbv0sd6.mjs");
+var $$splitComponentImporter$2 = () => import("./routes-B79t6fbg.mjs");
 var Route$2 = createFileRoute("/")({
 	head: () => ({ meta: [
-		{ title: "Markets | LayerBank" },
+		{ title: "LayerBank — The Universal Money Market for All Networks" },
 		{
 			name: "description",
 			content: "Explore supply and borrow markets across LayerBank."
@@ -212,7 +208,7 @@ var Route$1 = createFileRoute("/connection-pending")({
 	}] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./validate-DHXTJ-dd.mjs");
+var $$splitComponentImporter = () => import("./validate-B7xC-wOo.mjs");
 var Route = createFileRoute("/validate")({
 	head: () => ({ meta: [{ title: "Validate Wallet | LayerBank" }, {
 		name: "description",

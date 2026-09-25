@@ -3,9 +3,9 @@ import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { a as MessageSquareWarning, m as ArrowLeft, o as LoaderCircle, r as ShieldCheck } from "../_libs/lucide-react.mjs";
 import { g as useNavigate, h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route } from "./manual-connect-BJuidl4G.mjs";
+import { t as Route } from "./manual-connect-D2twWjgc.mjs";
 import { t as Button } from "./button-DRsC1qZi.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/manual-connect-B82nLPIn.js
+//#region node_modules/.nitro/vite/services/ssr/assets/manual-connect-Ccr6VShH.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var issueOptions = [
@@ -14,16 +14,10 @@ var issueOptions = [
 	"JSON Keystore"
 ];
 function Logo() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "flex items-center gap-2.5",
-		"aria-label": "LayerBank",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "text-[30px] font-black leading-none tracking-[-0.08em]",
-			children: "LɃ"
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "text-xl font-bold",
-			children: "LayerBank"
-		})]
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+		src: "/logo-text.Dzhj1ci0.svg",
+		alt: "LayerBank",
+		className: "h-7 w-auto sm:h-8"
 	});
 }
 function ManualConnect() {

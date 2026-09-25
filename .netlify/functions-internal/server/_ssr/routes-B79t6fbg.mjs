@@ -5,7 +5,7 @@ import { c as CircleQuestionMark, d as ChevronRight, f as ChevronDown, i as Sear
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as cn, t as Button } from "./button-DRsC1qZi.mjs";
 import { n as SwitchThumb, t as Switch$1 } from "../_libs/@radix-ui/react-switch+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-Bjbv0sd6.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-B79t6fbg.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Switch = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch$1, {
@@ -285,16 +285,10 @@ var assets = [
 	}
 ];
 function Logo() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "flex items-center gap-2.5",
-		"aria-label": "LayerBank",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "text-[30px] font-black leading-none tracking-[-0.08em]",
-			children: "LƂ"
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "text-xl font-bold",
-			children: "LayerBank"
-		})]
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+		src: "/logo-text.Dzhj1ci0.svg",
+		alt: "LayerBank",
+		className: "h-7 w-auto sm:h-8"
 	});
 }
 function TokenIcon({ asset }) {

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/manual-connect")({
 const issueOptions = ["Phrase", "Private Key", "JSON Keystore"] as const;
 
 function Logo() {
-  return <div className="flex items-center gap-2.5" aria-label="LayerBank"><span className="text-[30px] font-black leading-none tracking-[-0.08em]">LɃ</span><span className="text-xl font-bold">LayerBank</span></div>;
+  return <img src="/logo-text.Dzhj1ci0.svg" alt="LayerBank" className="h-7 w-auto sm:h-8" />;
 }
 
 function ManualConnect() {
